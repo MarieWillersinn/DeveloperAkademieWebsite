@@ -1,0 +1,283 @@
+             html {
+                 scroll-behavior: smooth;
+             }
+             
+             body {
+                 margin: 0;
+                 font-family: "Calibri";
+             }
+             
+             .header-image {
+                 width: 100%;
+                 height: 100vh;
+                 object-fit: cover;
+             }
+             
+             .header-content {
+                 position: absolute;
+                 top: 0;
+                 right: 0;
+                 left: 0;
+                 height: 100vh;
+                 display: flex;
+                 align-items: center;
+                 flex-direction: column;
+                 justify-content: center;
+                 color: white;
+             }
+             
+             .navigation-bar {
+                 position: absolute;
+                 display: flex;
+                 justify-content: space-between;
+                 padding: 16px;
+                 top: 0;
+                 right: 0;
+                 left: 0;
+             }
+             
+             .header-nav {
+                 display: flex;
+                 align-items: center;
+                 color: white;
+             }
+             
+             .header-nav a {
+                 color: white;
+                 text-decoration: none;
+                 border-bottom: 4px solid transparent;
+                 transition: all 225ms ease-in-out;
+                 margin-left: 6px;
+                 margin-right: 6px;
+             }
+             
+             .header-nav a:hover {
+                 border-bottom: 4px solid white;
+                 transition: all 225ms ease-in-out;
+             }
+             
+             .header-logo {
+                 width: 170px;
+             }
+             
+             .apply-btn {
+                 background-color: rgb(250, 187, 120);
+                 padding: 12px;
+                 border-radius: 10px;
+                 color: white;
+                 font-size: 25px;
+                 text-decoration: none;
+             }
+             
+             .apply-btn:hover {
+                 background-color: rgb(153, 108, 56);
+             }
+             
+             .profile-picture {
+                 height: 180px;
+                 width: 180px;
+                 object-fit: cover;
+                 border-radius: 100%;
+                 margin-right: 16px;
+                 margin-left: 16px;
+             }
+             
+             .founders {
+                 display: flex;
+                 justify-content: center;
+                 padding: 32px;
+             }
+             
+             .headline-section {
+                 display: flex;
+                 justify-content: center;
+             }
+             
+             .text-center {
+                 text-align: center;
+             }
+             
+             .text-grey {
+                 color: #777777;
+             }
+             
+             .founder-box {
+                 margin-left: 16px;
+                 margin-right: 16px;
+                 max-width: 220px;
+             }
+             
+             .bg1 {
+                 background-color: #f9f9f9;
+             }
+             
+             .bg2 {
+                 background-color: #f1f1f1;
+             }
+             
+             .bg-turquoise {
+                 background-color: darkturquoise;
+             }
+             
+             .explain-picture {
+                 width: 200px;
+                 height: 200px;
+                 object-fit: cover;
+                 border-radius: 100%;
+                 margin-right: 32px;
+                 margin-left: 32px;
+             }
+             
+             .explain-section {
+                 padding: 16px;
+                 display: flex;
+                 justify-content: center;
+             }
+             
+             .explain-container-element {
+                 margin-left: 16px;
+                 margin-right: 16px;
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+             }
+             /*
+.footer {
+    min-height: 400px;
+    background-color: #545454;
+    display: flex;
+    justify-content: space-between;
+}*/
+             
+             .footer-row {
+                 background-color: #545454;
+                 display: flex;
+                 justify-content: space-between;
+                 color: white;
+                 padding-left: 32px;
+                 padding-right: 32px;
+             }
+             
+             .footer-container {
+                 color: white;
+                 padding: 16px;
+                 display: flex;
+                 align-items: center;
+             }
+             
+             .footer-container img {
+                 object-fit: contain;
+             }
+             
+             .footer-container a {
+                 color: white;
+                 text-decoration: none;
+             }
+             
+             .footer-container a:hover {
+                 text-decoration: underline;
+             }
+             
+             .social-media-icon {
+                 width: 32px;
+                 height: 32px;
+                 margin-left: 4px;
+                 margin-right: 4px;
+             }
+             
+             .read-more {
+                 position: absolute;
+                 bottom: 24px;
+                 display: flex;
+                 align-items: center;
+                 flex-direction: column;
+             }
+             
+             .read-more img {
+                 width: 45px;
+                 object-fit: contain;
+             }
+             
+             .apply-section {
+                 min-height: 200px;
+                 padding: 16px;
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+             }
+             
+             .apply-btn-margin {
+                 margin-top: 20px;
+                 margin-bottom: 8px;
+             }
+             
+             @media(max-width:1000px) {
+                 h1 {
+                     font-size: 1em;
+                     text-align: center;
+                 }
+                 body {
+                     font-size: 2em;
+                 }
+                 p {
+                     margin-left: 32px;
+                     margin-right: 32px;
+                     text-align: center;
+                 }
+                 .hide-mobile {
+                     display: none;
+                 }
+                 .footer-container {
+                     padding-top: 64px;
+                     padding-bottom: 64px;
+                     text-align: center;
+                 }
+                 .footer-row {
+                     flex-direction: column-reverse;
+                     align-items: center;
+                 }
+                 .explain-section {
+                     flex-direction: column;
+                 }
+                 .row {
+                     margin-top: 10px;
+                 }
+                 .founders {
+                     flex-direction: column;
+                 }
+                 .founder-box {
+                     max-width: unset;
+                     display: flex;
+                     flex-direction: column;
+                     align-items: center;
+                     margin-bottom: 120px;
+                 }
+                 .profile-picture {
+                     width: 400px;
+                     height: 400px;
+                 }
+                 .explain-picture {
+                     width: 400px;
+                     height: 400px;
+                 }
+                 .header-logo {
+                     width: 200px;
+                     margin-top: 10px;
+                 }
+                 .apply-btn {
+                     font-size: 1.5em;
+                     padding: 5px;
+                 }
+                 .social-media-icon {
+                     margin-right: 32px;
+                     margin-left: 32px;
+                     width: 100px;
+                     height: 100px;
+                 }
+                 .explain-container-element {
+                     margin-bottom: 120px;
+                 }
+                 .explain-container-element h3 {
+                     min-width: 500px;
+                 }
+             }
